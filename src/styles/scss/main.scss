@@ -1,0 +1,19 @@
+@import './utils/reset', './utils/search';
+
+.backgroundImageContainer{
+    width: 100vw;
+    height: 100vh;
+    
+    .img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+}
+
+.img2 {
+    width: 400vw;
+    height: 100vh;
+}
