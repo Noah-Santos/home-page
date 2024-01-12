@@ -8,7 +8,6 @@
 body, html {
   height: 100%;
   width: 100%;
-  overflow-y: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -102,7 +101,7 @@ body, html {
     height: 13vh;
     width: 90vw;
     right: 5vw;
-    bottom: 2ch;
+    bottom: 2vh;
   }
 }
 @media (max-height: 680px) {
@@ -115,19 +114,30 @@ body, html {
   flex-direction: column;
   align-items: center;
 }
-.container .backgroundImageContainer {
+
+.backgroundImageContainer {
   width: 100vw;
   height: 100vh;
   position: absolute;
   z-index: 0;
 }
-.container .backgroundImageContainer .img {
+.backgroundImageContainer .img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   overflow: hidden;
 }
-.container .img2 {
+
+.img2 {
   width: 400vw;
   height: 100vh;
+}
+
+.transitions {
+  z-index: 2;
+}
+
+.hide {
+  transition: all 1s;
+  transform: translateX(-100vw);
 }/*# sourceMappingURL=main.css.map */
