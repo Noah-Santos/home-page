@@ -8,6 +8,7 @@
 body, html {
   height: 100%;
   width: 100%;
+  overflow-y: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -18,59 +19,113 @@ body, html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
   justify-content: center;
+  position: absolute;
+  top: 10vh;
 }
 .searchForm .searchContainer {
-  width: 25vw;
+  width: 45vw;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   position: relative;
   align-items: center;
 }
-.searchForm .searchContainer .search {
-  width: 25vw;
+.searchForm .searchContainer .searchSmall {
+  display: none;
+}
+.searchForm .searchContainer .searchLarge {
+  width: 45vw;
   border-radius: 2rem;
-  border: 2px solid rgb(9, 28, 91);
-  background-color: rgb(18, 47, 133);
+  border: 3px solid rgb(6, 27, 93);
+  background-color: rgb(5, 19, 58);
   color: rgb(239, 239, 239);
   font-size: 1.5rem;
   padding: 0.5rem;
   padding-left: 1rem;
 }
-.searchForm .searchContainer .search::placeholder {
+.searchForm .searchContainer .searchLarge::placeholder {
   color: rgb(239, 239, 239);
 }
-.searchForm .searchContainer .search:focus {
+.searchForm .searchContainer .searchLarge:focus {
+  outline: none;
+}
+.searchForm .searchContainer .searchSmall::placeholder {
+  color: rgb(239, 239, 239);
+}
+.searchForm .searchContainer .searchSmall:focus {
   outline: none;
 }
 .searchForm .searchContainer .searchIcon {
   position: absolute;
   right: 0;
-  padding-right: 0.5rem;
+  padding-right: 0.75rem;
   font-size: 2.5rem;
 }
 .searchForm .searchContainer .searchIcon path {
   color: rgb(239, 239, 239);
 }
 
+@media (max-width: 700px) {
+  .searchForm .searchContainer .searchLarge {
+    display: none;
+  }
+  .searchForm .searchContainer .searchSmall {
+    display: block;
+    width: 40vw;
+    border-radius: 2rem;
+    border: 3px solid rgb(6, 27, 93);
+    background-color: rgb(5, 19, 58);
+    color: rgb(239, 239, 239);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    padding-left: 1rem;
+  }
+  .searchForm .searchContainer .searchIcon {
+    font-size: 2rem;
+  }
+}
 .musicPlayer {
-  width: 75%;
+  width: 35rem;
+  height: 20vh;
+  z-index: 1;
+  position: absolute;
+  bottom: 2vh;
+  right: 2vw;
+  transition: all 0.75s;
 }
 
-.backgroundImageContainer {
+@media (max-width: 728px) {
+  .musicPlayer {
+    height: 13vh;
+    width: 90vw;
+    right: 5vw;
+    bottom: 2ch;
+  }
+}
+@media (max-height: 680px) {
+  .musicPlayer {
+    height: 17vh;
+  }
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .backgroundImageContainer {
   width: 100vw;
   height: 100vh;
+  position: absolute;
+  z-index: 0;
 }
-.backgroundImageContainer .img {
+.container .backgroundImageContainer .img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   overflow: hidden;
 }
-
-.img2 {
+.container .img2 {
   width: 400vw;
   height: 100vh;
 }/*# sourceMappingURL=main.css.map */

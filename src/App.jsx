@@ -8,14 +8,15 @@ import Music from './Components/Music';
 
 function App() {
   return (
-    <div>
+    <div className='container'>
       <div className='backgroundImageContainer'>
         <img src={earth2} alt="" className='img'/>
-        <img src={earth} alt="" className='img'/>
+        {/* <img src={earth} alt="" className='img'/> */}
         {/* <img src={galaxy} alt="" className='img'/>
         <img src={space} alt="" className='img'/>
         <img src={galaxy2} alt="" className='img'/> */}
       </div>
+      
       <Music className='musicPlayer'></Music>
       <SearchForm></SearchForm>
     </div>

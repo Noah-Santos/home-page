@@ -17,7 +17,8 @@ const SearchBar = () => {
         <>
             <form onSubmit={search} className='searchForm'>
                 <div className="searchContainer">
-                    <input type="text" ref={input} placeholder='Search Google Minus' className='search' autoComplete="off"/>
+                    <input type="text" ref={input} placeholder='Search Google Minus' className='searchLarge' autoComplete="off"/>
+                    <input type="text" ref={input} placeholder='Search' className='searchSmall' autoComplete="off"/>
                     <IoMdSearch className='searchIcon'></IoMdSearch>
                     {/* <CgSearch className="searchIcon"></CgSearch> */}
                 </div>

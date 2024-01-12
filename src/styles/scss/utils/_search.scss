@@ -2,44 +2,84 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
+    // height: 100%;
     justify-content: center;
+    position: absolute;
+    top: 10vh;
 
     .searchContainer{
-        width: 25vw;
+        width: 45vw;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         position: relative;
         align-items: center;
 
-        .search {
-            width: 25vw;
+        .searchSmall{
+            display: none;
+        }
+
+        .searchLarge {
+            width: 45vw;
             border-radius: 2rem;
-            border: 2px solid rgb(9, 28, 91);
-            background-color: rgb(18, 47, 133);
+            border: 3px solid rgb(6, 27, 93);
+            background-color: rgb(5, 19, 58);
             color: rgb(239, 239, 239);
             font-size: 1.5rem;
             padding: 0.5rem;
             padding-left: 1rem;
         }
     
-        .search::placeholder {
+        .searchLarge::placeholder {
             color: rgb(239, 239, 239);
         }
     
-        .search:focus {
+        .searchLarge:focus {
+            outline: none;
+        }
+
+        .searchSmall::placeholder {
+            color: rgb(239, 239, 239);
+        }
+    
+        .searchSmall:focus {
             outline: none;
         }
 
         .searchIcon{
             position: absolute;
             right: 0;
-            padding-right: 0.5rem;
+            padding-right: 0.75rem;
             font-size: 2.5rem;
 
             path{
                 color: rgb(239, 239, 239);
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .searchForm{
+        .searchContainer{
+            .searchLarge {
+                display: none;
+            }
+        
+            .searchSmall {
+                display: block;
+                width: 40vw;
+                border-radius: 2rem;
+                border: 3px solid rgb(6, 27, 93);
+                background-color: rgb(5, 19, 58);
+                color: rgb(239, 239, 239);
+                font-size: 1.5rem;
+                padding: 0.5rem;
+                padding-left: 1rem;
+            }
+
+            .searchIcon{
+                font-size: 2rem;
             }
         }
     }
