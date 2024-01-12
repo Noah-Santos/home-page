@@ -1,44 +1,48 @@
-.contentCont{
-    width: 200vw;
+#root{
     height: 100vh;
-    transition: all 1s;
-    display: flex;
-    flex-direction: row;
 
-    .container {
+    .contentCont {
+        width: 200vw;
+        height: 100vh;
+        transition: all 1s;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100vw;
+            position: relative;
+        }
+
+        .content {
+            width: 100vw;
+            position: relative;
+        }
+    }
+
+    .home {
+        transform: translateX(-100vw);
+    }
+
+    .backgroundImageContainer {
         width: 100vw;
-        position: relative;
+        height: 100vh;
+        position: absolute;
+        z-index: 0;
+
+        .img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            overflow: hidden;
+        }
+
     }
 
-    .content{
-        width: 100vw;
-        position: relative;
+    .img2 {
+        width: 400vw;
+        height: 100vh
     }
-}
-
-.home {
-    transform: translateX(-100vw);
-}
-
-.backgroundImageContainer {
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    z-index: 0;
-
-    .img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        overflow: hidden;
-    }
-
-}
-
-.img2 {
-    width: 400vw;
-    height: 100vh
 }

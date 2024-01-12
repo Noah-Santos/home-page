@@ -6,8 +6,9 @@
 }
 
 body, html {
-  height: 100%;
+  height: 100vh;
   width: 100%;
+  overflow: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -109,84 +110,84 @@ body, html {
     height: 17vh;
   }
 }
-.contentCont {
+#root {
+  height: 100vh;
+}
+#root .contentCont {
   width: 200vw;
   height: 100vh;
   transition: all 1s;
   display: flex;
   flex-direction: row;
 }
-.contentCont .container {
+#root .contentCont .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100vw;
   position: relative;
 }
-.contentCont .content {
+#root .contentCont .content {
   width: 100vw;
   position: relative;
 }
-
-.home {
+#root .home {
   transform: translateX(-100vw);
 }
-
-.backgroundImageContainer {
+#root .backgroundImageContainer {
   width: 100vw;
   height: 100vh;
   position: absolute;
   z-index: 0;
 }
-.backgroundImageContainer .img {
+#root .backgroundImageContainer .img {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   object-fit: cover;
   overflow: hidden;
 }
-
-.img2 {
+#root .img2 {
   width: 400vw;
   height: 100vh;
 }
 
 .contentBtnCont {
   position: absolute;
-  right: 2vw;
-  top: 2vh;
+  right: 4vw;
+  top: 4vh;
 }
 .contentBtnCont .switchButton {
   border: none;
   background-color: transparent;
   color: white;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   transition: all 0.75s;
 }
 .contentBtnCont .switchButton .contentButton {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   border-radius: 0.5rem;
   padding-left: 0.5rem;
 }
 
 .homeBtnCont {
   position: absolute;
-  left: 2vw;
-  top: 2vh;
+  left: 4vw;
+  top: 4vh;
 }
 .homeBtnCont .switchButton {
   border: none;
   background-color: transparent;
   color: white;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 .homeBtnCont .switchButton .homeButton {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   border-radius: 0.5rem;
   padding-right: 0.5rem;
 }/*# sourceMappingURL=main.css.map */
