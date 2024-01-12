@@ -55,6 +55,10 @@ body, html {
   color: rgb(239, 239, 239);
 }
 
+.musicPlayer {
+  width: 75%;
+}
+
 .backgroundImageContainer {
   width: 100vw;
   height: 100vh;
