@@ -48,8 +48,7 @@
 
         .searchIcon{
             position: absolute;
-            right: 0;
-            padding-right: 0.75rem;
+            right: 0.75rem;
             font-size: 2.5rem;
 
             path{
@@ -59,16 +58,18 @@
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 728px) {
     .searchForm{
         .searchContainer{
+            width: 60vw;
+
             .searchLarge {
                 display: none;
             }
         
             .searchSmall {
                 display: block;
-                width: 40vw;
+                width: 60vw;
                 border-radius: 2rem;
                 border: 3px solid rgb(6, 27, 93);
                 background-color: rgb(5, 19, 58);
@@ -84,3 +85,15 @@
         }
     }
 }
+
+// @media (max-width: 728px){
+//     .searchForm {
+//         .searchContainer {
+
+//             .searchLarge {
+//                 // display: block;
+//                 width: 60vw;
+//             }
+//         }
+//     }
+// }

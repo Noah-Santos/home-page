@@ -58,21 +58,23 @@ body, html {
 }
 .searchForm .searchContainer .searchIcon {
   position: absolute;
-  right: 0;
-  padding-right: 0.75rem;
+  right: 0.75rem;
   font-size: 2.5rem;
 }
 .searchForm .searchContainer .searchIcon path {
   color: rgb(239, 239, 239);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 728px) {
+  .searchForm .searchContainer {
+    width: 60vw;
+  }
   .searchForm .searchContainer .searchLarge {
     display: none;
   }
   .searchForm .searchContainer .searchSmall {
     display: block;
-    width: 40vw;
+    width: 60vw;
     border-radius: 2rem;
     border: 3px solid rgb(6, 27, 93);
     background-color: rgb(5, 19, 58);
