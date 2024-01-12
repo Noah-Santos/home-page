@@ -88,17 +88,17 @@ body, html {
 }
 .musicPlayer {
   width: 35rem;
-  height: 20vh;
+  height: 1px;
   z-index: 1;
   position: absolute;
-  bottom: 2vh;
+  bottom: 1px;
   right: 2vw;
   transition: all 0.75s;
 }
 
 @media (max-width: 728px) {
   .musicPlayer {
-    height: 13vh;
+    height: 1px;
     width: 90vw;
     right: 5vw;
     bottom: 2vh;
@@ -106,7 +106,7 @@ body, html {
 }
 @media (max-height: 680px) {
   .musicPlayer {
-    height: 17vh;
+    height: 1px;
   }
 }
 .container {
