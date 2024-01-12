@@ -1,10 +1,1 @@
-@import './utils/reset', './utils/search', './utils/music', './utils/app';
-
-.transitions{
-    z-index: 2;
-}
-
-.hide{
-    transition: all 1s;
-    transform: translateX(-100vw);
-}
+@import './utils/reset', './utils/search', './utils/music', './utils/app', './utils/button';

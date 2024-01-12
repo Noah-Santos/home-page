@@ -1,16 +1,16 @@
 .musicPlayer{
     width: 35rem;
-    height: 1px;
+    height: 20vh;
     z-index: 1;
     position: absolute;
-    bottom: 1px;
+    bottom: 2vh;
     right: 2vw;
     transition: all 0.75s;
 }
 
 @media (max-width: 728px){
     .musicPlayer {
-        height: 1px;
+        height: 13vh;
         width: 90vw;
         right: 5vw;
         bottom: 2vh;
@@ -19,6 +19,6 @@
 
 @media (max-height: 680px){
     .musicPlayer {
-        height: 1px;
+        height: 17vh;
     }
 }

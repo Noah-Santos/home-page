@@ -88,17 +88,17 @@ body, html {
 }
 .musicPlayer {
   width: 35rem;
-  height: 1px;
+  height: 20vh;
   z-index: 1;
   position: absolute;
-  bottom: 1px;
+  bottom: 2vh;
   right: 2vw;
   transition: all 0.75s;
 }
 
 @media (max-width: 728px) {
   .musicPlayer {
-    height: 1px;
+    height: 13vh;
     width: 90vw;
     right: 5vw;
     bottom: 2vh;
@@ -106,13 +106,30 @@ body, html {
 }
 @media (max-height: 680px) {
   .musicPlayer {
-    height: 1px;
+    height: 17vh;
   }
 }
-.container {
+.contentCont {
+  width: 200vw;
+  height: 100vh;
+  transition: all 1s;
+  display: flex;
+  flex-direction: row;
+}
+.contentCont .container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100vw;
+  position: relative;
+}
+.contentCont .content {
+  width: 100vw;
+  position: relative;
+}
+
+.home {
+  transform: translateX(-100vw);
 }
 
 .backgroundImageContainer {
@@ -133,11 +150,43 @@ body, html {
   height: 100vh;
 }
 
-.transitions {
-  z-index: 2;
+.contentBtnCont {
+  position: absolute;
+  right: 2vw;
+  top: 2vh;
+}
+.contentBtnCont .switchButton {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 0.75s;
+}
+.contentBtnCont .switchButton .contentButton {
+  font-size: 1.25rem;
+  border-radius: 0.5rem;
+  padding-left: 0.5rem;
 }
 
-.hide {
-  transition: all 1s;
-  transform: translateX(-100vw);
+.homeBtnCont {
+  position: absolute;
+  left: 2vw;
+  top: 2vh;
+}
+.homeBtnCont .switchButton {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.homeBtnCont .switchButton .homeButton {
+  font-size: 1.25rem;
+  border-radius: 0.5rem;
+  padding-right: 0.5rem;
 }/*# sourceMappingURL=main.css.map */

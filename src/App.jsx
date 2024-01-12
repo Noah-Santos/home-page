@@ -17,12 +17,19 @@ function App() {
         <img src={space} alt="" className='img'/>
         <img src={galaxy2} alt="" className='img'/> */}
       </div>
+      
+      <div className="contentCont">
+        <div className='container'>
+          <SearchForm></SearchForm>
+          <Button type='home'></Button>
+        </div>
 
-      <div className='container'>
-        <Music className='musicPlayer'></Music>
-        <SearchForm></SearchForm>
-        <Button></Button>
+        <div className="content">
+          <Button type='content'></Button>
+        </div>
       </div>
+      <Music className='musicPlayer'></Music>
+
     </>
   );
 }
