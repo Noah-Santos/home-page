@@ -46,3 +46,75 @@
         height: 100vh
     }
 }
+
+.mobile{
+    display: none;
+}
+
+@media (max-width: 680px) {
+    .desktop{
+        display: none;
+    }
+
+    .mobile{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        align-items: center;
+
+        .searchForm{
+            top: 2vh;
+
+            .searchContainer{
+                .searchSmall {
+                    font-size: 1rem;
+                }
+            
+                .searchIcon {
+                    font-size: 1.25rem;
+                }
+            }
+        }
+
+        .linkCont{
+            position: relative;
+            top: 8vh;
+            margin-left: 0;
+            width: 70vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            .info{
+                top: 0vh;
+                width: auto;
+
+                .linkTitle {
+                    font-size: 3vw;
+                }
+
+                .accordionSection {
+                    h3 {
+                        font-size: 2.5vw;
+                    }
+
+                    button {
+
+                        .accordionBtn {
+                            font-size: 2vw;
+                        }
+                    }
+
+                    .linksCont {
+                        display: flex;
+                        flex-direction: column;
+
+                        a {
+                            font-size: 2vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

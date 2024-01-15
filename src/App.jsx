@@ -13,25 +13,42 @@ function App() {
         <img src={earth2} alt="" className='img'/>
       </div>
       
-      <div className="contentCont">
-        <div className='container'>
-          <SearchForm></SearchForm>
-          <Button type='home'></Button>
-          <Quote></Quote>
-        </div>
+      <div className="desktop">
+        <div className="contentCont">
+          <div className='container'>
+            <SearchForm></SearchForm>
+            <Button type='home'></Button>
+            <Quote></Quote>
+          </div>
 
-        <div className="content">
-          <Button type='content'></Button>
-          <div className="linkCont">
-            <section className="info">
-              <h2 className='linkTitle'>Links</h2>
-              {Links.map((link, index)=>{
-                return <Accordion key={index} {...link}/>
-              })}
-            </section>
+          <div className="content">
+            <Button type='content'></Button>
+            <div className="linkCont">
+              <section className="info">
+                <h2 className='linkTitle'>Links</h2>
+                {Links.map((link, index)=>{
+                  return <Accordion key={index} {...link}/>
+                })}
+              </section>
+            </div>
           </div>
         </div>
       </div>
+
+      <div className="mobile">
+        <SearchForm></SearchForm>
+        {/* <Quote></Quote> */}
+
+        <div className="linkCont">
+          <section className="info">
+            <h2 className='linkTitle'>Links</h2>
+            {Links.map((link, index)=>{
+              return <Accordion key={index} {...link}/>
+            })}
+          </section>
+        </div>
+      </div>
+
       <Music className='musicPlayer'></Music>
 
     </>

@@ -152,6 +152,59 @@ body, html {
   height: 100vh;
 }
 
+.mobile {
+  display: none;
+}
+
+@media (max-width: 680px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+  }
+  .mobile .searchForm {
+    top: 2vh;
+  }
+  .mobile .searchForm .searchContainer .searchSmall {
+    font-size: 1rem;
+  }
+  .mobile .searchForm .searchContainer .searchIcon {
+    font-size: 1.25rem;
+  }
+  .mobile .linkCont {
+    position: relative;
+    top: 8vh;
+    margin-left: 0;
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .mobile .linkCont .info {
+    top: 0vh;
+    width: auto;
+  }
+  .mobile .linkCont .info .linkTitle {
+    font-size: 3vw;
+  }
+  .mobile .linkCont .info .accordionSection h3 {
+    font-size: 2.5vw;
+  }
+  .mobile .linkCont .info .accordionSection button .accordionBtn {
+    font-size: 2vw;
+  }
+  .mobile .linkCont .info .accordionSection .linksCont {
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile .linkCont .info .accordionSection .linksCont a {
+    font-size: 2vw;
+  }
+}
 .contentBtnCont {
   position: absolute;
   right: 4vw;
