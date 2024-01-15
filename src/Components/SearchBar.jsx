@@ -2,7 +2,6 @@
 
 import {useRef} from 'react';
 import { IoMdSearch } from "react-icons/io";
-import { CgSearch } from "react-icons/cg";
 
 const SearchBar = () => {
     let input = useRef('');
@@ -22,8 +21,6 @@ const SearchBar = () => {
                     <IoMdSearch className='searchIcon'></IoMdSearch>
                     {/* <CgSearch className="searchIcon"></CgSearch> */}
                 </div>
-                {/* ties the input tag to the useRef variable */}
-                {/* <button type='submit'><IoMdSearch /></button> */}
             </form>
         </>
     )
