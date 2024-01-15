@@ -3,6 +3,7 @@
   padding: 0;
   font-family: batman2;
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body, html {
@@ -203,4 +204,36 @@ body, html {
 }
 .quoteCont .quoteAuthor {
   font-size: 2vmax;
+}
+
+.accordionSection {
+  padding: 1rem 1.5rem;
+  border: 2px solid hsl(210, 30%, 67%);
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.accordionSection h4 {
+  text-transform: none;
+  line-height: 1.5;
+}
+.accordionSection p {
+  color: hsl(210, 30%, 45%);
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+}
+.accordionSection header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.accordionSection header h4 {
+  margin-bottom: 0;
+}
+.accordionSection .linksCont {
+  display: flex;
+  flex-direction: column;
+}
+.accordionSection .linksCont a {
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */
