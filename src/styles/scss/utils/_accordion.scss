@@ -1,37 +1,75 @@
-.accordionSection {
-    padding: 1rem 1.5rem;
-    border: 2px solid hsl(210, 30%, 67%);
-    margin-bottom: 1rem;
-    border-radius: 0.25rem;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+.linkCont{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20vw;
 
-    h4 {
-        text-transform: none;
-        line-height: 1.5;
-    }
-
-    p {
-        color: hsl(210, 30%, 45%);
-        margin-bottom: 0;
-        margin-top: 0.5rem;
-    }
-
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        h4 {
-            margin-bottom: 0;
-        }
-    }
-
-    .linksCont {
+    .info {
         display: flex;
         flex-direction: column;
+        position: relative;
+        top: 3vh;
+        width: 50vw;
 
-        a{
-            text-decoration: none;
+        .linkTitle {
+            text-align: left;
+            font-size: 2vw;
+            width: 100%;
+        }
+
+        .accordionSection {
+            padding: 1rem 1.5rem;
+            border: 2px solid hsl(210, 30%, 67%);
+            margin-bottom: 0.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            width: 45vw;
+            background-color: rgb(5, 19, 58);
+            transition: all 1s;
+
+            h3 {
+                text-transform: none;
+                line-height: 1.5;
+                text-decoration: underline;
+                font-size: 1.5vw;
+            }
+
+            button{
+                background: transparent;
+                border: none;
+
+                .accordionBtn{
+                    font-size: 1vw;
+
+                    path{
+                        color: white;
+                    }       
+                }
+            }
+
+            header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                h4 {
+                    margin-bottom: 0;
+                }
+            }
+
+            .linksCont {
+                display: flex;
+                flex-direction: column;
+
+                a {
+                    text-decoration: none;
+                    padding: 0.2rem;
+                    padding-left: 0.5rem;
+                    margin: 0.2rem;
+                    background-color: rgb(6, 27, 93);
+                    border-radius: 0.5rem;
+                    font-size: 75%;
+                }
+            }
         }
     }
 }

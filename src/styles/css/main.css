@@ -206,34 +206,67 @@ body, html {
   font-size: 2vmax;
 }
 
-.accordionSection {
+.linkCont {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20vw;
+}
+.linkCont .info {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 3vh;
+  width: 50vw;
+}
+.linkCont .info .linkTitle {
+  text-align: left;
+  font-size: 2vw;
+  width: 100%;
+}
+.linkCont .info .accordionSection {
   padding: 1rem 1.5rem;
   border: 2px solid hsl(210, 30%, 67%);
-  margin-bottom: 1rem;
-  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 45vw;
+  background-color: rgb(5, 19, 58);
+  transition: all 1s;
 }
-.accordionSection h4 {
+.linkCont .info .accordionSection h3 {
   text-transform: none;
   line-height: 1.5;
+  text-decoration: underline;
+  font-size: 1.5vw;
 }
-.accordionSection p {
-  color: hsl(210, 30%, 45%);
-  margin-bottom: 0;
-  margin-top: 0.5rem;
+.linkCont .info .accordionSection button {
+  background: transparent;
+  border: none;
 }
-.accordionSection header {
+.linkCont .info .accordionSection button .accordionBtn {
+  font-size: 1vw;
+}
+.linkCont .info .accordionSection button .accordionBtn path {
+  color: white;
+}
+.linkCont .info .accordionSection header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.accordionSection header h4 {
+.linkCont .info .accordionSection header h4 {
   margin-bottom: 0;
 }
-.accordionSection .linksCont {
+.linkCont .info .accordionSection .linksCont {
   display: flex;
   flex-direction: column;
 }
-.accordionSection .linksCont a {
+.linkCont .info .accordionSection .linksCont a {
   text-decoration: none;
+  padding: 0.2rem;
+  padding-left: 0.5rem;
+  margin: 0.2rem;
+  background-color: rgb(6, 27, 93);
+  border-radius: 0.5rem;
+  font-size: 75%;
 }/*# sourceMappingURL=main.css.map */
