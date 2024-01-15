@@ -2,7 +2,8 @@ import {useState, useEffect, useRef} from 'react'
 
 const Quote = () => {
     const [Quote, setQuote] = useState('second');
-    const num = useRef(0)
+    const num = useRef(0);
+    const auth = useRef('')
 
     // gets the quote list every re-render
     useEffect(() =>{
@@ -18,10 +19,13 @@ const Quote = () => {
         });
     }, []);
 
+    // gets the authors name and removes the unecessary information at the end
+    auth.current = `${Quote[num.current].author}`.split(',');
+
     return (
         <div className='quoteCont'>
-            <h1>"{Quote[num.current].text}"</h1>
-            <h2>-{Quote[num.current].author}</h2>
+            <h1 className='quoteContent'>"{Quote[num.current].text}"</h1>
+            <h2 className='quoteAuthor'>-{auth.current[0]}</h2>
         </div>
     )
 }
