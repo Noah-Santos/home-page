@@ -9,10 +9,12 @@ import Links from './data';
 function App() {
   return (
     <>
+      {/* background image */}
       <div className='backgroundImageContainer'>
         <img src={earth2} alt="" className='img'/>
       </div>
       
+      {/* desktop variation */}
       <div className="desktop">
         <div className="contentCont">
           <div className='container'>
@@ -35,9 +37,9 @@ function App() {
         </div>
       </div>
 
+      {/* mobile sections */}
       <div className="mobile">
         <SearchForm></SearchForm>
-        {/* <Quote></Quote> */}
 
         <div className="linkCont">
           <section className="info">

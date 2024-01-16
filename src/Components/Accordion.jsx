@@ -6,6 +6,7 @@ import boopSfx from '../sounds/104825__cgeffex__lego_click2.wav';
 const Accordion = ({name, link}) => {
     const [showInfo, setShowInfo] = useState(false);
 
+    // code that creates the sound effect and adds it to the onclick of the element
     const BoopButton = () => {
         const [play] = useSound(boopSfx);
         return (
